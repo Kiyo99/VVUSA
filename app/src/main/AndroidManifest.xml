@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vvusa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="VVUSA"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".CateringActivity" />
+        <activity android:name=".HairDressingActivity" />
+        <activity android:name=".RepairActivity" />
+        <activity android:name=".BarberingActivity" />
+        <activity android:name=".CosmeticActivity" />
+        <activity android:name=".ClothesActivity" />
+        <activity android:name=".BagsActivity" />
+        <activity android:name=".shoesActivity" />
+        <activity android:name=".GadgetsActivity" />
+        <activity android:name=".about" />
+        <activity android:name=".EGWDashboard" />
+        <activity android:name=".branch" />
+        <activity android:name=".NorteyDashboard" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".NagsdaAdmin" />
+        <activity android:name=".EGWAdmin" />
+        <activity android:name=".BediakoAdmin" />
+        <activity android:name=".NorteyAdmin" />
+        <activity android:name=".Stationary" />
+        <activity android:name=".SellerActivity" />
+        <activity android:name=".thirdCard" />
+        <activity android:name=".NagsdaActivity" />
+        <activity android:name=".EgwActivity" />
+        <activity android:name=".BediakoActivity" />
+        <activity android:name=".bookRoom" />
+        <activity android:name=".hostelPay2" />
+        <activity android:name=".buyer" />
+        <activity android:name=".secondCard" />
+        <activity android:name=".hosteldashboard" />
+        <activity android:name=".hostelPay4" />
+        <activity android:name=".workstudyAdmin" />
+        <activity android:name=".payActivity" />
+        <activity android:name=".firstCard" />
+        <activity android:name=".cafAdminScan" />
+        <activity android:name=".cafAdmin" />
+        <activity android:name=".cafQR" />
+        <activity android:name=".NorteyActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

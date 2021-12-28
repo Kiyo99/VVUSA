@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerActivity"
+    android:id="@+id/content3">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#E1D6D6">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productsPage"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:padding="10dp">
+
+           <ImageView
+               android:id="@+id/productImage"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               app:srcCompat="@drawable/camera" />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/input">
+
+               <EditText
+                   android:id="@+id/productName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:background="@drawable/edittext_background"
+                   android:hint="Product's Name"
+                   android:inputType="text"
+                   android:padding="10dp"
+                   android:textColor="@color/black"
+                   android:textColorHint="@color/black" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_marginTop="15dp"
+               android:background="@drawable/edittext_background"
+               android:drawableEnd="@drawable/ic_arrow">
+
+               <androidx.appcompat.widget.AppCompatSpinner
+                   android:id="@+id/productCondition"
+                   android:layout_width="match_parent"
+                   android:layout_height="45dp"
+                   android:spinnerMode="dropdown"
+                   android:textSize="24sp"
+                   android:textColor="@color/black"
+                   android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/productPrice"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:background="@drawable/edittext_background"
+                   android:hint="Product's price in Ghana cedis"
+                   android:inputType="number"
+                   android:padding="10dp"
+                   android:textColor="@color/black"
+                   android:textColorHint="@color/black" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_marginTop="15dp"
+               android:background="@drawable/edittext_background"
+               android:drawableEnd="@drawable/ic_arrow">
+
+               <androidx.appcompat.widget.AppCompatSpinner
+                   android:id="@+id/spinnerProduct"
+                   android:layout_width="match_parent"
+                   android:layout_height="45dp"
+                   android:spinnerMode="dropdown"
+                   android:textSize="24sp"
+                   android:textColor="@color/black"
+                   android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/upload"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="35dp"
+               android:background="@drawable/purple_rec"
+               android:text="Upload"
+               android:textColor="@color/white" />
+
+       </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/servicesPage"
+        android:padding="10dp"
+        android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/serviceImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/camera_alt" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputt">
+
+            <EditText
+                android:id="@+id/serviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Services's Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_arrow">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/serviceCondition"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:spinnerMode="dropdown"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/servicePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Services's price in Ghana cedis"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_arrow">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerService"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:spinnerMode="dropdown"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upload2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/purple_rec"
+            android:text="Upload"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+

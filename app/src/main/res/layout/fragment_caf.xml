@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CafFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="30dp"/>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_cafeteria2"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/logoN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="WELCOME TO CAFAPP"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+
+
+        <Button
+
+            android:id="@+id/bf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/purple_rec"
+            android:backgroundTint="@color/purplevvu"
+            android:text="Breakfast"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            />
+
+        <Button
+
+            android:id="@+id/lh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/purple_rec"
+            android:text="Lunch"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            tools:ignore="OnClick" />
+
+
+        <Button
+
+            android:id="@+id/sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/purple_rec"
+            android:text="Supper"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            tools:ignore="OnClick" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

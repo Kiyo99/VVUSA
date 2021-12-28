@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="purplevvu">#201A97</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#EA0808</color>
+
+    <!-- Brand colors -->
+    <color name="orange">#F9A826</color>
+    <color name="purple">#36013f</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#fff</color>
+    <color name="bg_screen2">#fff</color>
+    <color name="bg_screen3">#fff</color>
+    <color name="bg_screen4">#fff</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#D8D8DF</color>
+    <color name="dot_dark_screen2">#D8D8DF</color>
+    <color name="dot_dark_screen3">#D8D8DF</color>
+    <color name="dot_dark_screen4">#D8D8DF</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#818181</color>
+    <color name="dot_light_screen2">#818181</color>
+    <color name="dot_light_screen3">#818181</color>
+    <color name="dot_light_screen4">#818181</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <color name="silver_400">#CBC9C9</color>
+    <color name="azac_500">#DEB334</color>
+    <color name="cod_gray_900">#171516</color>
+    // this is used to modify the default border color of a text input
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#CBC9C9</color>
+
+    //campus market
+
+
+</resources>

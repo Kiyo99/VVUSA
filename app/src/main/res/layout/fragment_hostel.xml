@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HostelFragment">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/ic_hostel3"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VVU Hostel"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/slide_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Booking hostels on campus has never been this easy, select a payment plan and follow the prompts. Use your receipt or reference in your hostel registration form when applying."
+                    android:textAlignment="center"
+                    android:textColor="#818181"
+                    android:textSize="@dimen/slide_desc"
+                    android:lineHeight="25dp"/>
+
+                <Button
+                    android:id="@+id/paybtn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/newrec"
+                    android:backgroundTint="@color/purplevvu"
+                    android:text="I want to pay for accomodation (4 in a room)"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/paybtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rec"
+                    android:backgroundTint="@color/purplevvu"
+                    android:textColor="@color/white"
+                    android:text="I want to pay for accomodation (2 in a room)"
+                    tools:layout_editor_absoluteX="145dp"
+                    tools:layout_editor_absoluteY="537dp" />
+                <Button
+                    android:id="@+id/bookroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rec"
+                    android:backgroundTint="@color/purplevvu"
+                    android:textColor="@color/white"
+                    android:text="I want to book a room"
+                    tools:layout_editor_absoluteX="145dp"
+                    tools:layout_editor_absoluteY="537dp" />
+                <Button
+                    android:id="@+id/roomStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/newrec"
+                    android:backgroundTint="@color/purplevvu"
+                    android:layout_marginBottom="50dp"
+                    android:text="I want to view my room status"
+                    android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+</ScrollView>

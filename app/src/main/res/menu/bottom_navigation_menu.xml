@@ -1,0 +1,28 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:iconTint="#818181"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_caf"
+        android:icon="@drawable/ic_caf"
+        android:iconTint="#818181"
+        android:title="Cafeteria"/>
+    <item
+        android:id="@+id/nav_hostel"
+        android:icon="@drawable/ic_hostel"
+        android:iconTint="#818181"
+        android:title="Hostel"/>
+    <item
+        android:id="@+id/nav_workstudy"
+        android:icon="@drawable/ic_work"
+        android:iconTint="#818181"
+        android:title="Work/study"/>
+    <item
+        android:id="@+id/nav_market"
+        android:icon="@drawable/ic_campus_market"
+        android:iconTint="#818181"
+        android:title="Campus Market"/>
+</menu>

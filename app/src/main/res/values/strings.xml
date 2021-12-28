@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">VVUSA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hostel management</string>
+    <string name="slide_1_desc">Managing hostels on campus has become a lot more easier with few simple taps.</string>
+
+    <string name="slide_2_title">Cafeteria management</string>
+    <string name="slide_2_desc">Getting your food at the Cafeteria has been made magical, explore for more.</string>
+
+    <string name="slide_3_title">Work study</string>
+    <string name="slide_3_desc">You can now apply for work study in few minutes by just filling a digital form.</string>
+
+    <string name="slide_4_title">Campus market</string>
+    <string name="slide_4_desc">The pain of going off campus to buy everything is solved. Buy goods right on campus.</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="Announcement" formatted="true">October 4. 2021\n\n
+
+        Dear Student,\n\n
+
+        The Lord has been good to our University community. Despite the challenges that descended upon us at the beginning of the pandemic, the semester has been successful.\n\n
+
+Congratulations to all of you. For those who have few exams to complete, I wish you God\'s blessings on your efforts to excel in your exams.\n\n
+        <b>Please take note of the following as you prepare for your vacation:\n\n
+        1. All Resident students, except nursing whose semester ends on October 29, 2021, must vacate the halls by 5:O0 pm on Sunday, October 9, 2021.\n\n
+
+ 2. Vacate your room by properly going through the checking-out process with the Assistant Hall Deans.\n\n
+
+ 3. Ensure your room is clean. Occupants who fail to do so will be charged accordingly.\n\n
+
+ 4. Submit your key to the Assistant Hall Dean as you check out. Failure to do so will attract a fee equivalent to three times the cost of replacing the lock.\n\n
+
+ 5. International students wish to be residents on campus during vacation must apply for accommodation at the office of the Dean, Student Life and Services office before Sunday, October 9, 2021.\n\n
+
+            6. Students who want to engage in the work-study program during the break should apply to the General Administration Department and for accomodation, at the office of the Dean, Student Life and Services office. <u>Remember that only those willing to work 8 hours a day during the vacation will be given accomodation on campus.</u></b>\n\n
+
+For the safety of our campus community, please adhere to the above directives.\n\n
+
+Once again, I wish you all the best and happy holidays.\n\n
+
+Remember to stay blessed.\n\n
+
+Martha Duah, PhD\n
+Dean, Student Life and Service.\n</string>
+
+    <string name="about">"The Valley View Studentlife mobile application was developed by Kio Godsfavour Ngo, a product of VVU. The mobile application was developed as part of his final year project when he discovered existing problems he had encountered during his four-year tenure as a student at the University.
+        \n\nThe VVUSA strives to make the studentlife experience at Valley View University exponentially better by tackling 4 very key aspects that students encounter during their stay on campus:
+        \n1. The four hostels
+        \n2. The Cafeteria
+        \n3. The Workstudy department
+        \n4. Buying and selling on campus
+
+        \n\nThe app performs four(4) primary functions:
+        \n1. It gives students of the University the choice of booking rooms right from the comfort of their homes.
+        \n2. It generates digital chits for students to feed from the cafeteria rather than the paper chits, which contributed to paper wastage at the University.
+        \n3. It gives students an automated way of applying for workstudy positions.
+        \n4. It creates a virtual market where students can buy and sell."</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="NoAnnouncement">No announcements yet!</string>
+
+
+    <string name="meal_name">Cheese Burger</string>
+    <string name="meal_description">
+        A properly seasoned patty topped with a slice of fresh tomato, cheese and lettuce enclosed in a
+        fluffy bun. It’s accompanied with a side of fries with a sweet and spicy dip.
+    </string>
+    <!-- Hardcoding the price is for demo purpose only.
+    You shouldn't do this in prod -->
+    <string name="meal_price">Pay &#x20A6;4,000</string>
+    <string name="payment_prompt">Card details</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_expiry">Card Expiry</string>
+    <string name="card_cvv">CVV</string>
+    <string name="payment">"https://paystack.com/pay/pan-h-renm"</string>
+
+    <string-array name="option">
+        <item>Products</item>
+        <item>Services</item>
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="floor">
+        <item>GF</item>
+        <item>FF</item>
+        <item>SF</item>
+        <item>TF</item>
+    </string-array>
+
+    <string-array name="block">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+    <string-array name="roomNumber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="productCategories">
+        <item>Clothes</item>
+        <item>Shoes</item>
+        <item>Bags</item>
+        <item>Gadgets</item>
+        <item>Cosmetics</item>
+        <item>Stationary</item>
+    </string-array>
+
+    <string-array name="serviceCategories">
+        <item>Gadget Repairs</item>
+        <item>Hair Dressing</item>
+        <item>Barbering</item>
+        <item>Catering</item>
+    </string-array>
+
+    <string-array name="conditionSpinner">
+        <item>Brand new</item>
+        <item>Used</item>
+    </string-array>
+</resources>

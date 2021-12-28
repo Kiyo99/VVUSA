@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_shopping2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="108dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="CAMPUS MARKET"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="366dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:lineHeight="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Buy and Sell your products and services with great ease on campus. Choose an option below to get started."
+            android:textAlignment="center"
+            android:textColor="#818181"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="440dp" />
+
+        <Button
+            android:id="@+id/buyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/newrec"
+            android:backgroundTint="@color/purplevvu"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="I want to buy"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="537dp" />
+
+        <Button
+            android:id="@+id/sellBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/rec"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="I want to sell"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="537dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
