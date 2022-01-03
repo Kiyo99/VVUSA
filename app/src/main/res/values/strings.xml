@@ -102,6 +102,13 @@ Dean, Student Life and Service.\n</string>
         <item>TF</item>
     </string-array>
 
+    <string-array name="Nagsda_floor">
+        <item>GF</item>
+        <item>FF</item>
+        <item>SF</item>
+        <item>EX</item>
+    </string-array>
+
     <string-array name="block">
         <item>A</item>
         <item>B</item>
