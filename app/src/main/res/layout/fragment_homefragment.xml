@@ -77,7 +77,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:fontFamily="@font/roboto_medium"
-                                android:text="21 C"
+                                android:text=""
+                                android:id="@+id/temp"
                                 android:textColor="#ffff"
                                 android:textSize="18dp" />
 

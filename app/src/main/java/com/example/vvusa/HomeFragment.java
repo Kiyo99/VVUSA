@@ -14,6 +14,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -30,7 +36,12 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.w3c.dom.Text;
+
+import java.text.DecimalFormat;
 
 import static android.content.ContentValues.TAG;
 import static android.content.Intent.getIntent;
@@ -89,6 +100,7 @@ public class HomeFragment extends Fragment {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         TextView welcome = (TextView) v.findViewById(R.id.welcome);
+        TextView tempTV = (TextView) v.findViewById(R.id.temp);
         TextView topic2 = (TextView) v.findViewById(R.id.topic2);
         TextView subtitle2 = (TextView) v.findViewById(R.id.subtitle2);
         CardView first_card = (CardView) v.findViewById(R.id.first_card);
@@ -99,6 +111,38 @@ public class HomeFragment extends Fragment {
 //        CardView cafeteria = (CardView) v.findViewById(R.id.cafeteria);
 //        CardView workstudy = (CardView) v.findViewById(R.id.workstudy);
 //        CardView campusMarket = (CardView) v.findViewById(R.id.campusMarket);
+
+        final String url = "https://api.openweathermap.org/data/2.5/weather?q=Oyibi&units=metric&appid=ab14f74264477285ae20a75ed821de46";
+        DecimalFormat df = new DecimalFormat("#.##");
+
+        //Going into the weatherAPI
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                //Log.d("onResponse: ", response);
+                String output = "";
+                try {
+                    JSONObject jsonResponse = new JSONObject(response);
+//                    JSONArray jsonArray = jsonResponse.getJSONArray("Weather");
+//                    JSONObject jsonObjectWeather = jsonArray.getJSONObject(0);
+                    JSONObject jsonObjectMain = jsonResponse.getJSONObject("main");
+                    double temp = jsonObjectMain.getDouble("temp");
+                    tempTV.setText(temp + "C");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getActivity(), error.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+        requestQueue.add(stringRequest);
 
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = auth.getCurrentUser();
