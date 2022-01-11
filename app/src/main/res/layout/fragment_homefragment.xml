@@ -147,17 +147,18 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Dear Students"
-                                android:id="@+id/first"
+                                android:text=""
+                                android:id="@+id/firstTitle"
                                 android:textColor="@color/white"
                                 android:textSize="18dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/first"
+                                android:layout_below="@id/firstTitle"
+                                android:id="@+id/firstSub"
                                 android:fontFamily="@font/roboto_regular"
-                                android:text="Letter from the Dean of StudentLife and Services"
+                                android:text=""
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 

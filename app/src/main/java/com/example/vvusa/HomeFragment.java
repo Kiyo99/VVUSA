@@ -100,6 +100,8 @@ public class HomeFragment extends Fragment {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         TextView welcome = (TextView) v.findViewById(R.id.welcome);
+        TextView firstTitle = (TextView) v.findViewById(R.id.firstTitle);
+        TextView firstSub = (TextView) v.findViewById(R.id.firstSub);
         TextView tempTV = (TextView) v.findViewById(R.id.temp);
         TextView topic2 = (TextView) v.findViewById(R.id.topic2);
         TextView subtitle2 = (TextView) v.findViewById(R.id.subtitle2);
@@ -144,6 +146,7 @@ public class HomeFragment extends Fragment {
         RequestQueue requestQueue = Volley.newRequestQueue(getContext());
         requestQueue.add(stringRequest);
 
+        //Going into the database to get User details
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = auth.getCurrentUser();
         String userid = firebaseUser.getUid();
@@ -170,6 +173,32 @@ public class HomeFragment extends Fragment {
         });
 
         //Fetching the various components from firestore
+
+        DocumentReference docRef1 = db.collection("news").document("News");
+        docRef1.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document.exists()) {
+                        Log.d(TAG, "DocumentSnapshot data: " + document.getData());
+                        String topic = document.getString("topic");
+                        String subtitle = document.getString("subtitle");
+                        firstTitle.setText(topic);
+                        firstSub.setText(subtitle);
+
+                    } else {
+                        Log.d(TAG, "No such document");
+                        firstSub.setText("Document not found");
+                    }
+                } else {
+                    Log.d(TAG, "get failed with ", task.getException());
+                    firstSub.setText("failed");
+                }
+            }
+        });
+
+
         DocumentReference docRef2 = db.collection("news").document("News2");
         docRef2.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override

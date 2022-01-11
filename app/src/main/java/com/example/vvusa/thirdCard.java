@@ -2,7 +2,9 @@ package com.example.vvusa;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.webkit.WebSettings;
@@ -19,6 +21,8 @@ import static android.content.ContentValues.TAG;
 
 public class thirdCard extends AppCompatActivity {
     WebView wb;
+    ProgressDialog pd;
+    SwipeRefreshLayout refreshScreen;
 
     private class HelloWebViewClient extends WebViewClient {
         @Override
@@ -32,7 +36,24 @@ public class thirdCard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_card);
 
-        //Pulling the second content from firebase into the second cardView
+        refreshScreen = findViewById(R.id.refreshScreen);
+        pd = new ProgressDialog(thirdCard.this);
+        pd.setMessage("Loading, please wait...");
+        pd.show();
+        showWebView();
+
+        refreshScreen.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshScreen.setRefreshing(true);
+                showWebView();
+                refreshScreen.setRefreshing(false);
+            }
+        });
+    }
+
+    private void showWebView() {
+        //Pulling the third content from firebase into the third cardView
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         DocumentReference docRef = db.collection("news").document("News3");
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -52,6 +73,14 @@ public class thirdCard extends AppCompatActivity {
                         wb.getSettings().setPluginState(WebSettings.PluginState.ON);
                         wb.setWebViewClient(new thirdCard.HelloWebViewClient());
                         wb.loadUrl(url);
+
+                        wb.setWebViewClient(new WebViewClient() {
+                            @Override
+                            public void onPageFinished(WebView view, String url) {
+                                super.onPageFinished(view, url);
+                                pd.dismiss();
+                            }
+                        });
 
                     } else {
                         Log.d(TAG, "No such document");
