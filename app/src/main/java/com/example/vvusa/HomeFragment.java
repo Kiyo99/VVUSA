@@ -41,7 +41,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.sql.Time;
 import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import static android.content.ContentValues.TAG;
 import static android.content.Intent.getIntent;
@@ -160,7 +165,18 @@ public class HomeFragment extends Fragment {
                         Log.d(TAG, "DocumentSnapshot data: " + document.getData());
 //                        String name = document.getData().toString();
                         String name = document.getString("First name");
-                        welcome.setText(String.format("Welcome, %s", name));
+
+                        Calendar c = Calendar.getInstance();
+                        int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
+
+                        if(timeOfDay >= 0 && timeOfDay < 12){
+                            welcome.setText(String.format("Good morning, %s", name));
+                        }else if(timeOfDay >= 12 && timeOfDay < 17){
+                            welcome.setText(String.format("Good afternoon, %s", name));
+                        }else if(timeOfDay >= 17 && timeOfDay < 24){
+                            welcome.setText(String.format("Good evening, %s", name));
+                        }
+
                     } else {
                         Log.d(TAG, "No such document");
                         welcome.setText("Document not found");
@@ -252,7 +268,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(getActivity(), branch.class);
+                intent.setClass(getActivity(), fourthCard.class);
                 getActivity().startActivity(intent);
             }
         });
