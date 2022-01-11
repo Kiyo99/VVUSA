@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -19,7 +20,8 @@ import static android.content.ContentValues.TAG;
 
 public class secondCard extends AppCompatActivity {
 
-    TextView content2;
+//    TextView content2;
+    org.sufficientlysecure.htmltextview.HtmlTextView content2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class secondCard extends AppCompatActivity {
                     if (document.exists()) {
                         Log.d(TAG, "DocumentSnapshot data: " + document.getData());
                         String content = document.getString("content");
-                        content2.setText(content);
+                        content2.setHtml(content);
 
                     } else {
                         Log.d(TAG, "No such document");
