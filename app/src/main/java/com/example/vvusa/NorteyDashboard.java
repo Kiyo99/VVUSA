@@ -126,6 +126,31 @@ public class NorteyDashboard extends AppCompatActivity {
             }
         });
 
+        //Onclick for TextViews
+        title1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NorteyDashboard.this, Complaint1.class);
+                startActivity(intent);
+            }
+        });
+
+        title2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NorteyDashboard.this, Complaint2.class);
+                startActivity(intent);
+            }
+        });
+
+        title3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NorteyDashboard.this, Complaint3.class);
+                startActivity(intent);
+            }
+        });
+
 
         //Creating the method for the send button
         send.setOnClickListener(new View.OnClickListener() {
