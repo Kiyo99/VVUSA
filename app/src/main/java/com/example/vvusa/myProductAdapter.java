@@ -1,10 +1,12 @@
 package com.example.vvusa;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +22,8 @@ import java.net.URI;
 import java.util.ArrayList;
 
 import retrofit2.http.Url;
+
+import static androidx.core.content.ContextCompat.startActivity;
 
 public class myProductAdapter extends RecyclerView.Adapter<myProductAdapter.MyViewHolder> {
 
@@ -62,6 +66,7 @@ public class myProductAdapter extends RecyclerView.Adapter<myProductAdapter.MyVi
 
         TextView name, condition, price;
         ImageView image;
+        Button buy;
 
         public MyViewHolder (@NonNull View itemView){
             super(itemView);
@@ -70,6 +75,14 @@ public class myProductAdapter extends RecyclerView.Adapter<myProductAdapter.MyVi
             condition = itemView.findViewById(R.id.condition);
             price = itemView.findViewById(R.id.price);
             image = itemView.findViewById(R.id.image);
+            buy = itemView.findViewById(R.id.buy);
+
+            buy.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    itemView.getContext().startActivity(new Intent(itemView.getContext(), ChatArea.class));
+                }
+            });
 
         }
     }

@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -78,21 +80,22 @@ public class CafFragment extends Fragment {
         String strDate = simpleDateFormat.format(calendar.getTime());
         Time.setText(strDate);
 
+        Calendar c = Calendar.getInstance();
+        int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
+
+
         Breakfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 if (strDate != "09:00:00"){
-
-                     Toast.makeText (getActivity(),
-                             "IT IS NOT YET TIME", Toast.LENGTH_SHORT).show();
-
-                  } else {
-                     Intent intent = new Intent();
-                     intent.setClass(getActivity(), cafQR.class);
-                     getActivity().startActivity(intent);
-                  }
-
-
+                if (timeOfDay >= 0 && timeOfDay < 12) {
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), cafQR.class);
+                    getActivity().startActivity(intent);
+                } else {
+                    Toast.makeText(getActivity(),
+                            "It isn't time for breakfast yet", Toast.LENGTH_SHORT).show();
+//                    Snackbar.make(v.findViewById(R.id.caffrag), "It is not time for breakfast yet", Snackbar.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -100,42 +103,31 @@ public class CafFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent();
-                intent.setClass(getActivity(), cafQR.class);
-                getActivity().startActivity(intent);
-
-//                if (strDate != "14:00:00") {
-//
-//                    Toast.makeText(getActivity(),
-//                            "IT IS NOT YET TIME", Toast.LENGTH_SHORT).show();
-//
-//                } else {
-//                    Intent intent = new Intent();
-//                    intent.setClass(getActivity(), cafQR.class);
-//                    getActivity().startActivity(intent);
-//                }
-//
-//
-//
+                if(timeOfDay >= 12 && timeOfDay < 17){
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), cafQR.class);
+                    getActivity().startActivity(intent);
+                } else {
+                    Toast.makeText(getActivity(),
+                            "It is not time for lunch yet", Toast.LENGTH_SHORT).show();
+//                    Snackbar.make(v.findViewById(R.id.caffrag), "It is not time for lunch yet", Snackbar.LENGTH_LONG).show();
+                }
             }
         });
 
         Supper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                if (strDate != "05:00:00"){
-//
-//                    Toast.makeText (getActivity(),
-//                            "IT IS NOT YET TIME", Toast.LENGTH_SHORT).show();
-//
-//                } else {
-//                    Intent intent = new Intent();
-//                    intent.setClass(getActivity(), cafQR.class);
-//                    getActivity().startActivity(intent);
-//                }
-                Intent intent = new Intent();
-                intent.setClass(getActivity(), NorteyAdmin.class);
-                getActivity().startActivity(intent);
+
+                if(timeOfDay >= 17 && timeOfDay < 24){
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), cafQR.class);
+                    getActivity().startActivity(intent);
+                } else {
+                    Toast.makeText(getActivity(),
+                            "It is not time for supper yet", Toast.LENGTH_SHORT).show();
+//                    Snackbar.make(v.findViewById(R.id.caffrag), "It is not time for supper yet", Snackbar.LENGTH_LONG).show();
+                }
             }
         });
 

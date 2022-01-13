@@ -53,7 +53,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="28dp"
                             android:layout_alignParentRight="true"
-                            android:src="@drawable/cloud" />
+                            />
 
                     </RelativeLayout>
 
@@ -82,7 +82,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:fontFamily="@font/roboto_medium"
-                            android:text="21 C"
+                            android:text=""
                             android:textColor="#ffff"
                             android:textSize="18dp" />
 
@@ -242,17 +242,18 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="COSSA's Innovation Challenge"
+                                android:text=""
                                 android:textColor="@color/white"
                                 android:textSize="16dp"
-                                android:id="@+id/third"/>
+                                android:id="@+id/topic3"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/third"
+                                android:layout_below="@id/topic3"
+                                android:id="@+id/subtitle3"
                                 android:fontFamily="@font/roboto_regular"
-                                android:text="Article on the event"
+                                android:text=""
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 
@@ -287,17 +288,18 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Graduation"
+                                android:text=""
                                 android:textColor="@color/white"
                                 android:textSize="18dp"
-                                android:id="@+id/fourth"/>
+                                android:id="@+id/topic4"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/fourth"
+                                android:layout_below="@id/topic4"
+                                android:id="@+id/subtitle4"
                                 android:fontFamily="@font/roboto_regular"
-                                android:text="Application for Graduation is ongoing"
+                                android:text=""
                                 android:textColor="@color/white"
                                 android:textSize="12dp" />
 

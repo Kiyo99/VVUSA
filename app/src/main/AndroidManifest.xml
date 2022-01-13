@@ -13,7 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".fourthCard"></activity>
+        <activity android:name=".NorteyCard3"></activity>
+        <activity android:name=".NorteyCard2" />
+        <activity android:name=".NorteyCard1" />
+        <activity android:name=".ChatArea" />
+        <activity android:name=".fourthCard" />
         <activity android:name=".NagsdaDashboard" />
         <activity android:name=".BediakoDashboard" />
         <activity android:name=".SettingsActivity" />
