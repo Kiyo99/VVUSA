@@ -2,7 +2,7 @@
 
 VVUSA (Valley View University Studentlife App) is a native Android application developed with Java. This app aims to enhance the student experience at Valley View University by unifying various aspects of student life into a single, convenient platform. 
 
-Presented at VVU ICTExpo 2023, you can watch the presentation [here](https://youtu.be/L6lbALwX2c0?si=0Mt4q96zEPnXtS1i).
+Presented at VVU ICTExpo 2023, you can watch a preview to the presentation [here](https://youtu.be/L6lbALwX2c0?si=0Mt4q96zEPnXtS1i).
 
 ## About
 
