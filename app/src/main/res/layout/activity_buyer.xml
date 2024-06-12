@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".buyer"
-    android:background="#f6f5ff">
+    android:background="#f6f5ff"
+    tools:context=".buyer">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,26 +15,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-<!--            <EditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_margin="20dp"-->
-<!--                android:background="@drawable/search"-->
-<!--                android:elevation="2dp"-->
-<!--                android:hint="Search campus market..."-->
-<!--                android:padding="10dp"-->
-<!--                android:textColor="#818181"-->
-<!--                android:autofillHints="name"-->
-<!--                android:inputType="textAutoComplete"/>-->
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Select a product category"
-                android:gravity="center"
                 android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:textSize="24sp"/>
+                android:gravity="center"
+                android:text="Select a product category"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -53,7 +40,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -61,9 +49,9 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
+                            android:contentDescription="Illustration images"
                             android:paddingBottom="10dp"
-                            android:src="@drawable/ic_education"
-                            android:contentDescription="Illustration images"/>
+                            android:src="@drawable/ic_education" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -73,13 +61,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/stationaryBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/stationaryBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -87,7 +76,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -106,13 +96,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/gadgetsBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/gadgetsBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -127,7 +118,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -146,13 +138,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/shoeBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/shoeBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -160,7 +153,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -179,13 +173,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/bagsBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/bagsBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -199,8 +194,9 @@
                     <LinearLayout
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin= "5dp"
-                        android:background="@color/purplevvu"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -219,13 +215,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/clothBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/clothBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -233,7 +230,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -252,13 +250,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/cosmeticsBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/cosmeticsBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -269,11 +268,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Select a service category"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
-                android:textStyle="bold"
+                android:text="Select a service category"
                 android:textSize="24sp"
-                android:layout_marginTop="30dp"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -291,7 +290,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -310,13 +310,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/gadgetRepairBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/gadgetRepairBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -324,7 +325,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -343,13 +345,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/hairDressingBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/hairDressingBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -364,7 +367,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -383,13 +387,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/babberingBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/babberingBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
@@ -397,7 +402,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/purplevvu"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/purplevvu"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -416,13 +422,14 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/catheringBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="View"
                             android:layout_marginTop="10dp"
-                            android:background="@color/white"
-                            android:textColor="@color/purplevvu"
-                            android:id="@+id/catheringBtn"/>
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/white"
+                            android:text="View"
+                            android:textColor="@color/purplevvu" />
 
                     </LinearLayout>
 
