@@ -26,7 +26,24 @@ The app performs four primary functions:
 
 ## Screenshots
 
-*Coming soon*
+### Home Screen
+<img src="./screenshots/Screenshot_vvusa_home.png" alt="Home Screen" width="200"/>
+
+### Digital Cafeteria Chits
+<img src="./screenshots/Screenshot_caf.png" alt="Digital Cafeteria Chits" width="200"/>
+
+### Workstudy Applications
+<img src="./screenshots/Screenshot_workstudy.png" alt="Workstudy Applications" width="200"/>
+
+### Virtual Marketplace
+<img src="./screenshots/Screenshot_campus_market.png" alt="Virtual Marketplace" width="200"/>
+
+### Product Categories
+<img src="./screenshots/Screenshot_product_category.png" alt="Product Categories" width="200"/>
+
+### Hostel View
+<img src="./screenshots/Screenshot_hostel_2.png" alt="Hostel View" width="200"/>
+
 
 ## Acknowledgments
 
