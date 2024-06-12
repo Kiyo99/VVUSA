@@ -24,7 +24,7 @@ The app performs four primary functions:
 3. **Workstudy Applications:** Provides an automated system for applying to workstudy positions.
 4. **Virtual Marketplace:** Creates a platform for students to buy and sell items on campus.
 
-## Screenshots
+## Some Screenshots
 
 ### Home Screen
 <img src="./screenshots/Screenshot_vvusa_home.png" alt="Home Screen" width="200"/>
